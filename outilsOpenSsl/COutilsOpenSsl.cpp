@@ -30,7 +30,6 @@ bool COutilsOpenSsl::InitOpenSsl()
         cout << "Version: " << OPENSSL_VERSION_TEXT << endl;
         SSL_load_error_strings();
         SSL_library_init();
-        RAND_screen();
     }
     return m_bInit;
 }

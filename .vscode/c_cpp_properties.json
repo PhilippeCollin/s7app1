@@ -10,7 +10,7 @@
                 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include",
                 "${workspaceRoot}",
                 "${workspaceRoot}/outilsOpenSsl",
-                "${workspaceRoot}/openssl-1.0.0l/include"
+                "${workspaceRoot}/openssl/include"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
