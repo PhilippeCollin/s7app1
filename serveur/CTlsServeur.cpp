@@ -1,6 +1,5 @@
 #include "CTlsServeur.h"
 
-
 CTlsServeur::CTlsServeur()
 : CServeur(),
   m_context(NULL),

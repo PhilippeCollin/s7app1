@@ -1,6 +1,6 @@
 #if !defined CTLSSERVEUR_H
 #define CTLSSERVEUR_H
-
+#include <iostream>
 #include "CServeur.h"
 
 #include "openssl/ssl.h"
@@ -12,7 +12,7 @@ class CTlsServeur : protected CServeur
 {
 public:
     /**
-    Constructeur par défaut.
+    Constructeur par dï¿½faut.
     */
     CTlsServeur();
 
@@ -22,8 +22,8 @@ public:
     virtual ~CTlsServeur();
 
     /**
-    Démarre le serveur.
-    @param addrServeur l'adresse à laquelle se connecter
+    Dï¿½marre le serveur.
+    @param addrServeur l'adresse ï¿½ laquelle se connecter
     @param portServeur le port auquel se connecter
     */
     int attendre(string addrServeur, unsigned int portServeur);
@@ -31,7 +31,7 @@ public:
     void recevoir();
 
     /**
-    Arrêt du client, initiant la fermeture de la connexion.
+    Arrï¿½t du client, initiant la fermeture de la connexion.
     */
     void arreter();
 
@@ -42,7 +42,7 @@ protected:
     SSL_CTX* m_context;
 
     /**
-    La connexion TLS associée au socket 'accepté'.
+    La connexion TLS associï¿½e au socket 'acceptï¿½'.
     */
     SSL* m_connexion;
 };

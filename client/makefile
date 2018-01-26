@@ -18,7 +18,7 @@ DCOMPILE_FLAGS = -D DEBUG
 # Add additional include paths
 INCLUDES = -I $(SRC_PATH) -I $(SRC_PATH)/../openssl-1.0.0l/include -I $(SRC_PATH)/../outilsOpenSsl
 # General linker settings
-LINK_FLAGS =
+LINK_FLAGS = -lssl -lcrypto
 # Additional release-specific linker settings
 RLINK_FLAGS =
 # Additional debug-specific linker settings

@@ -2,6 +2,7 @@
 
 #include <sys/socket.h>
 #include <iostream>
+#include <string.h>
 
 using std::cout;
 using std::endl;
