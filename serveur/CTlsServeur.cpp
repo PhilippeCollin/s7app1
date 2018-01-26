@@ -5,6 +5,8 @@ CTlsServeur::CTlsServeur()
   m_context(NULL),
   m_connexion(NULL)
 {
+        SSL_load_error_strings();
+        SSL_library_init();
 }
 
 CTlsServeur::~CTlsServeur()
