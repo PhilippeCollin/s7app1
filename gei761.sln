@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "outilsOpenSsl", "outilsOpenSsl\outilsOpenSsl.vcxproj", "{87070E16-ACB7-4DBA-8135-739FF429CC74}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "serveur", "serveur\serveur.vcxproj", "{139DCAD6-CA93-4128-8605-E4C442218286}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client", "client\client.vcxproj", "{3F582C10-C2E0-40AF-AC80-3C57D3A0FEC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7ADAAD02-4F9F-4639-AB5A-79F53911B750}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87070E16-ACB7-4DBA-8135-739FF429CC74}.Debug|Win32.ActiveCfg = Debug|Win32
+		{87070E16-ACB7-4DBA-8135-739FF429CC74}.Debug|Win32.Build.0 = Debug|Win32
+		{87070E16-ACB7-4DBA-8135-739FF429CC74}.Release|Win32.ActiveCfg = Release|Win32
+		{87070E16-ACB7-4DBA-8135-739FF429CC74}.Release|Win32.Build.0 = Release|Win32
+		{139DCAD6-CA93-4128-8605-E4C442218286}.Debug|Win32.ActiveCfg = Debug|Win32
+		{139DCAD6-CA93-4128-8605-E4C442218286}.Debug|Win32.Build.0 = Debug|Win32
+		{139DCAD6-CA93-4128-8605-E4C442218286}.Release|Win32.ActiveCfg = Release|Win32
+		{139DCAD6-CA93-4128-8605-E4C442218286}.Release|Win32.Build.0 = Release|Win32
+		{3F582C10-C2E0-40AF-AC80-3C57D3A0FEC7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3F582C10-C2E0-40AF-AC80-3C57D3A0FEC7}.Debug|Win32.Build.0 = Debug|Win32
+		{3F582C10-C2E0-40AF-AC80-3C57D3A0FEC7}.Release|Win32.ActiveCfg = Release|Win32
+		{3F582C10-C2E0-40AF-AC80-3C57D3A0FEC7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
