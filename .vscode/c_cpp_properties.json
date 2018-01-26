@@ -40,7 +40,8 @@
                 "/usr/include/c++/7.2.1/x86_64-pc-linux-gnu",
                 "/usr/include/c++/v1",
                 "/usr/include/linux",
-                "${workspaceRoot}/openssl-1.0.0l/include/openssl"
+                "${workspaceRoot}/openssl-1.0.0l/include/openssl",
+                "${workspaceRoot}/outilsOpenSsl"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",

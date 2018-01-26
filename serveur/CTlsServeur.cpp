@@ -5,13 +5,13 @@ CTlsServeur::CTlsServeur()
   m_context(NULL),
   m_connexion(NULL)
 {
-        SSL_load_error_strings();
-        SSL_library_init();
+    SSL_load_error_strings();
+    SSL_library_init();
 }
 
 CTlsServeur::~CTlsServeur()
 {
-
+    
 }
 
 int CTlsServeur::attendre(string addrServeur, unsigned int portServeur)
