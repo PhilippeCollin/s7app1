@@ -16,11 +16,12 @@ echo -n "Configure OpenSSL... "
 echo "✅"
 
 echo "------------------------------------------"
-echo "Build OpenSSL... "
+echo -n "Build OpenSSL... "
 if [ "$VERSION" != "$DEFAULT_VERSION" ]
 then
   make depend
 fi
 make > /dev/null 2>&1
-echo -n "✅"
+echo "✅"
+echo "------------------------------------------"
 echo "Done 💥"
