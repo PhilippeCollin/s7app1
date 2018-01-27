@@ -3,6 +3,7 @@ project(src)
 
 set(CMAKE_CXX_STANDARD 11)
 
+set(OPENSSL_ROOT_DIR openssl)
 set(OPENSSL_USE_STATIC_LIBS TRUE)
 find_package(OpenSSL REQUIRED)
 message(AUTHOR_WARNING "OPENSSL libs: ${OPENSSL_VERSION}")

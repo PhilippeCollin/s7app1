@@ -1,9 +1,9 @@
 add_executable(client
         CClient.cpp
         CClient.h
-        client.cpp
         CTlsClient.cpp
         CTlsClient.h
+        client.cpp
         ${CMAKE_SOURCE_DIR}/outilsOpenSsl/COutilsOpenSsl.h
         ${CMAKE_SOURCE_DIR}/outilsOpenSsl/COutilsOpenSsl.cpp)
 
