@@ -5,7 +5,8 @@ VERSION=${1:-$DEFAULT_VERSION}
 echo "------------------------------------------"
 echo -n "Installing OpenSSL ${VERSION}... "
 rm -rf openssl
-wget --quiet https://github.com/openssl/openssl/archive/OpenSSL_${VERSION//./_}.tar.gz -O - | tar -xz && mv openssl-OpenSSL_${VERSION//./_} openssl
+curl --silent -L https://github.com/openssl/openssl/archive/OpenSSL_${VERSION//./_}.tar.gz | tar -xz
+mv openssl-OpenSSL_${VERSION//./_} openssl
 echo "✅"
 
 cd openssl
