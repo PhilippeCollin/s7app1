@@ -37,7 +37,6 @@ bool COutilsOpenSsl::InitOpenSsl()
 X509* COutilsOpenSsl::ouvrirCertificat(string nom)
 {
     string chemin = CERTIFICATS_PATH + nom;
-    cout << chemin << endl;
     ifstream cert (chemin.c_str(), ios::in | ios::binary);
     cert.seekg (0,ios::end);
     int certSize = static_cast<int>(cert.tellg());
