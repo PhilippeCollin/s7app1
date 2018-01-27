@@ -1,9 +1,26 @@
 #! /bin/bash
-VERSION='1.1.0g'
+DEFAULT_VERSION='1.0.0l'
+VERSION=${1:-$DEFAULT_VERSION}
 
+echo "------------------------------------------"
+echo -n "Installing OpenSSL ${VERSION}... "
 rm -rf openssl
-wget https://github.com/openssl/openssl/archive/OpenSSL_${VERSION//./_}.tar.gz -O - | tar -xz && mv openssl-OpenSSL_${VERSION//./_} openssl
+wget --quiet https://github.com/openssl/openssl/archive/OpenSSL_${VERSION//./_}.tar.gz -O - | tar -xz && mv openssl-OpenSSL_${VERSION//./_} openssl
+echo "✅"
+
 cd openssl
-./Configure darwin64-x86_64-cc shared enable-ec_nistp_64_gcc_128 no-ssl2 no-ssl3 no-comp --prefix=$(pwd) --libdir=/
-make depend
-make
+
+echo "------------------------------------------"
+echo -n "Configure OpenSSL... "
+./Configure darwin64-x86_64-cc shared enable-ec_nistp_64_gcc_128 no-ssl2 no-ssl3 --prefix=$(pwd) --libdir=/ > /dev/null 2>&1
+echo "✅"
+
+echo "------------------------------------------"
+echo "Build OpenSSL... "
+if [ "$VERSION" != "$DEFAULT_VERSION" ]
+then
+  make depend
+fi
+make > /dev/null 2>&1
+echo -n "✅"
+echo "Done 💥"
