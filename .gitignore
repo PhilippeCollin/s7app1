@@ -250,4 +250,7 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
-openssl-1.0.0l/
+
+# Project dependencies
+openssl
+cmake-build-debug

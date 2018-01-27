@@ -1,6 +1,4 @@
 // Classe du serveur TLS.
-#define SSL_SERVER_RSA_CA_PATH  "../pki/certificat.crt"
-
 #include "CTlsServeur.h"
 #include "COutilsOpenSsl.h"
 
