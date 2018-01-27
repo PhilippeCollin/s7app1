@@ -25,7 +25,7 @@ public:
     @param chemin le chemin du fichier
     @return la structure interne du certificat, ou NULL si la conversion a Échoué
     */
-    static X509* ouvrirCertificat(string chemin);
+    static X509* ouvrirCertificat(string nom);
 
     /**
     Méthode servant à tracer les messages TLS envoyées et reçues par la librairie.

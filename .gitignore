@@ -254,3 +254,6 @@ paket-files/
 # Project dependencies
 openssl
 cmake-build-debug
+certificats/*
+!certificats/.gitkeep
+

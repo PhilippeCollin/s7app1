@@ -34,8 +34,10 @@ bool COutilsOpenSsl::InitOpenSsl()
     return m_bInit;
 }
 
-X509* COutilsOpenSsl::ouvrirCertificat(string chemin)
+X509* COutilsOpenSsl::ouvrirCertificat(string nom)
 {
+    string chemin = CERTIFICATS_PATH + nom;
+    cout << chemin << endl;
     ifstream cert (chemin.c_str(), ios::in | ios::binary);
     cert.seekg (0,ios::end);
     int certSize = static_cast<int>(cert.tellg());
@@ -46,7 +48,7 @@ X509* COutilsOpenSsl::ouvrirCertificat(string chemin)
     cert.close();
 
     const unsigned char* p = (unsigned char*)certBuffer;
-    X509* x509cert = d2i_X509(NULL, &p, certSize);
+    X509* x509cert = d2i_X509(nullptr, &p, certSize);
 
     delete [] certBuffer;
 
