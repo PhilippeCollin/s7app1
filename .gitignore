@@ -257,3 +257,11 @@ cmake-build-debug
 certificats/*
 !certificats/.gitkeep
 
+*.txt
+Makefile
+CMakefiles/
+.release_time
+*.cbp
+*.cmake
+client
+serveur
